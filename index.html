@@ -6,7 +6,7 @@
 		// TODO: create a handler
 		function setSearchEngine() {
 			console.log("hello world");
-			let form = document.getElementById("searchForm");
+			let form = document.getElementById("form");
           	form.addEventListener("submit", event => {
 				let selectedEngine = document.querySelector("input[name=engine]:checked");
 					let actions = {
@@ -19,9 +19,7 @@
 		  	})
 		};
 		
-    window.addEventListener("load", setSearchEngine(),{
-
-	});
+    window.addEventListener("load", setSearchEngine);
 	</script>
 </head>
 
